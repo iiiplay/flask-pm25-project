@@ -45,7 +45,7 @@ def get_data_by_county(county):
 # 取得不重複縣市
 def get_counties():
     conn, cursor = open_db()
-    result = {"success": True, "message": None, "rows": None}
+    result = {"success": True, "message": None, "rows": []}
 
     if not conn:
         result["success"] = False
